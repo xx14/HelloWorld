@@ -1,18 +1,16 @@
+<?hh //strict
+
+	namespace HelloWorld\Providers;
 
 
-    <?hh //strict
+	use Plenty\Plugin\RouteServiceProvider;
+	use Plenty\Plugin\Routing\Router;
 
-        namespace HelloWorld\Providers;
-
-
-        use Plenty\Plugin\RouteServiceProvider;
-        use Plenty\Plugin\Routing\Router;
-
-        class HelloWorldRouteServiceProvider extends RouteServiceProvider
-        {
-            public function map(Router $router):void
-            {
-				$router->get('hello','HelloWorld\Controllers\ContentController@sayHello');
-            }
-        }
-	
+	class HelloWorldRouteServiceProvider extends RouteServiceProvider
+	{
+		public function map(Router $router):void
+		{
+			$router->get('hello','HelloWorld\Controllers\ContentController@sayHello');
+		}
+	}
+?>
