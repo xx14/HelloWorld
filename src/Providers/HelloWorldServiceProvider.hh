@@ -19,3 +19,4 @@
 				$this->getApplication()->register(HelloWorldRouteServiceProvider::class);
             }
         }
+	?>
