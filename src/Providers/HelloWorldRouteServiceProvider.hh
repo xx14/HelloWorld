@@ -13,4 +13,3 @@
 			$router->get('hello','HelloWorld\Controllers\ContentController@sayHello');
 		}
 	}
-?>
