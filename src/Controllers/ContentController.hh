@@ -15,4 +15,4 @@
                 return $twig->render('HelloWorld::content.hello');
             }
         }
-	?>
+	
